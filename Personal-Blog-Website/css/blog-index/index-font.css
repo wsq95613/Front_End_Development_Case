@@ -1,0 +1,35 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.black-small-font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: black;
+}
+.gray-small-font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: gray;
+}
+.declare{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

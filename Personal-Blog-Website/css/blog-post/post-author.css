@@ -1,0 +1,13 @@
+.author-intro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+.author-info{
+    width: 100%;
+}
+.name-follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

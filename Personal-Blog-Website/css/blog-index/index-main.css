@@ -1,0 +1,70 @@
+@import url("index-header.css");
+@import url("index-font.css");
+@import url("index-card.css");
+
+header{
+    display: flex;
+    flex-direction: row;
+    grid-area: hd;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 5px 5px -5px silver;
+    width: 100%;
+}
+article{
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+}
+footer{
+    display: flex;
+    grid-area: ft; 
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media(max-width: 320px) {
+    .container{
+        display:grid;
+        grid-template-rows: 150px 95% 70px;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+}
+@media(max-width: 414px) {
+    .container{
+        display:grid;
+        grid-template-rows: 150px 95% 70px;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+}
+@media(min-width: 600px) and (max-width: 900px) {
+    .container{
+        display:grid;
+        grid-template-rows: 70px 95% 70px;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+}
+@media(min-width: 901px) {
+    .container{
+        display:grid;
+        grid-template-rows: 70px 95% 70px;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+}
