@@ -28,7 +28,7 @@ const server = app.listen(port, ()=>{
 
 // Callback function to complete GET '/all'
 app.get('/all',(req,res)=>{
-    console.log('been updated');
+    console.log('has been updated');
     console.log(projectData);
     res.send(projectData);
 })
@@ -37,7 +37,7 @@ app.post('/add',(req,res)=>{
     projectData["date"] = req.body.date;
     projectData["temp"] = req.body.temp;
     projectData["feel"] = req.body.feel;
-    console.log('been added:');
+    console.log('has been added:');
     console.log(projectData);
     res.send(projectData);
 })

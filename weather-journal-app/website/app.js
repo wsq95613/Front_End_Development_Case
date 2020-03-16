@@ -5,7 +5,7 @@ const apiKey = ',us&appid=d187a37095fb3996f124324aa772a9c7';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Event listener to add function to existing HTML DOM element
 document.getElementById('generate').addEventListener('click', performAction);
@@ -29,6 +29,7 @@ const getWeather = async (baseUrl,zip,key) =>{
         return data;
     }catch(error){
         console.log('error',error);
+        alert("error", error);
     }
 }
 /* Function to POST data */
@@ -49,6 +50,7 @@ const postData = async ( url = '', data = {})=>{
         return newData;
       }catch(error) {
          console.log("error", error);
+         alert("error", error);
       }
    }
 /* Function to GET Project Data */
@@ -62,5 +64,6 @@ const retrieveData = async () =>{
         document.getElementById('content').innerHTML = 'feeling: '+allData.feel;
     }catch(error) {
         console.log("error", error);
+        alert("error", error);
     }
 }
