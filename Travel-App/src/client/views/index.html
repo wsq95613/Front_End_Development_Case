@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Evaluate News NLP</title>
+        <title>Travel Planner</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -10,27 +10,31 @@
 
         <header>
             <div class="">
-                Evaluate News NLP
+              Travel Planner
             </div>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="url" type="text" name="input" value="" onblur="Client.onBlur()" placeholder="Please enter URL">
-                    <input type="submit" name="" value="Sentiment Analysis" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form>
+                    <input id="dest" type="text" name="input" value="" placeholder="Please enter destination">
+                    <input id="date" type="date" name="input" value="">
+                    <input id="research" type="submit" name="" value="Research">
                 </form>
             <section>
 
             <section>
-                <strong>Sentiment Analysis Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <span>Weather Information：</span>
+                  <div id="weather"></div>
+                    <span>Country Information：</span>
+                  <div id="country"></div>
+                  <div >
+                    <img id="pic" src="">
+                  </div>
+                </div>
             </section>
         </main>
-
-        <footer>
-            <p>© 2020 by Evaluate News NLP.</p>
-        </footer>
 
         <script>
             // Check that service workers are supported
